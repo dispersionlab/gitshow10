@@ -11,8 +11,8 @@
       "rightModuleId": 8,
       "data": {
         "audio": {
-          "driver": 5,
-          "deviceName": "Apple Inc.: External Headphones",
+          "driver": 8,
+          "deviceName": "Default Device",
           "offset": 0,
           "maxChannels": 8,
           "sampleRate": 44100,
@@ -164,7 +164,7 @@
         },
         {
           "id": 2,
-          "value": 5.39202023
+          "value": -1.39400184
         },
         {
           "id": 3,
@@ -239,19 +239,19 @@
         },
         {
           "id": 2,
-          "value": 18.0599537
+          "value": 23.459938
         },
         {
           "id": 3,
-          "value": 0.278001726
+          "value": 0.689001739
         },
         {
           "id": 4,
-          "value": 0.681500196
+          "value": 0.374000132
         },
         {
           "id": 5,
-          "value": 0.768999875
+          "value": 0.600999355
         },
         {
           "id": 6,
@@ -259,7 +259,7 @@
         },
         {
           "id": 7,
-          "value": -0.524999857
+          "value": 0.0390002355
         },
         {
           "id": 8,
@@ -267,11 +267,11 @@
         },
         {
           "id": 9,
-          "value": -0.419999987
+          "value": 0.155999973
         },
         {
           "id": 10,
-          "value": 0.256000191
+          "value": -0.41599977
         },
         {
           "id": 11,
@@ -305,11 +305,11 @@
         },
         {
           "id": 2,
-          "value": 7.22995281
+          "value": 38.0999565
         },
         {
           "id": 3,
-          "value": 0.162502244
+          "value": 0.80600214
         },
         {
           "id": 4,
@@ -363,23 +363,23 @@
       "params": [
         {
           "id": 0,
-          "value": 0.0
+          "value": 1.0
         },
         {
           "id": 1,
-          "value": 0.0
+          "value": 1.0
         },
         {
           "id": 2,
-          "value": 5.95502472
+          "value": -1.52899957
         },
         {
           "id": 3,
-          "value": 0.581999838
+          "value": 1.8689996
         },
         {
           "id": 4,
-          "value": 0.291500628
+          "value": 0.00300000003
         }
       ],
       "leftModuleId": 28,
@@ -397,7 +397,7 @@
       "params": [
         {
           "id": 0,
-          "value": 4.0
+          "value": 0.0
         },
         {
           "id": 1,
@@ -461,7 +461,7 @@
         },
         {
           "id": 16,
-          "value": 1.29119968
+          "value": 0.200000003
         },
         {
           "id": 17,
@@ -944,7 +944,7 @@
         },
         {
           "id": 6,
-          "value": 0.0390000008
+          "value": 0.600000143
         },
         {
           "id": 7,
@@ -952,7 +952,7 @@
         },
         {
           "id": 8,
-          "value": 0.0
+          "value": 0.708000302
         },
         {
           "id": 9,
@@ -968,7 +968,7 @@
         },
         {
           "id": 12,
-          "value": 0.494499832
+          "value": 0.471999854
         }
       ],
       "pos": [
@@ -1001,14 +1001,6 @@
       "inputModuleId": 44,
       "inputId": 2,
       "color": "#0986ad"
-    },
-    {
-      "id": 429,
-      "outputModuleId": 28,
-      "outputId": 2,
-      "inputModuleId": 39,
-      "inputId": 2,
-      "color": "#c9b70e"
     },
     {
       "id": 396,
@@ -1248,6 +1240,14 @@
       "outputId": 0,
       "inputModuleId": 38,
       "inputId": 8,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 429,
+      "outputModuleId": 28,
+      "outputId": 2,
+      "inputModuleId": 39,
+      "inputId": 2,
       "color": "#c9b70e"
     }
   ]
