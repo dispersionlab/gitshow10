@@ -12,5 +12,4 @@ More traditionally musical sounds, similar to chirping or plucking, rather than 
 
 The score, while cryptic, does provide some explanation, as flipping the SWITCHES on the MODULES is an effective way to vary the synthesizer's sound in VCV. However, the last line remains too vague to be of any substantial use.
 
-
-For this iteration of the piece, edits were made to the values of the resonator modules at the bottom of the scene, giving the sounds they produced a less percussive, more melodic sound. It was preformed by slowly manipulating the frequency nobs of the LFO-1 and LFO-2  modules in the top left corner.
+For this iteration of the piece, the drum synthesizers were replaced with a VCO-1 module. The inputs and outputs into the other modules were reorganized to reflect this change, and finalized after some experimentation. It was preformed by slowly manipulating the frequency nobs of the LFO-1, VCO-1 modules, as well as toggling the value of the two switches on the VCO-1 module.

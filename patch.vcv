@@ -12,7 +12,6 @@
       "data": {
         "audio": {
           "driver": 8,
-          "deviceName": "Default Device",
           "offset": 0,
           "maxChannels": 8,
           "sampleRate": 44100,
@@ -20,7 +19,7 @@
         }
       },
       "pos": [
-        80,
+        81,
         0
       ]
     },
@@ -54,7 +53,7 @@
       "leftModuleId": 44,
       "rightModuleId": 35,
       "pos": [
-        60,
+        61,
         0
       ]
     },
@@ -67,7 +66,7 @@
       "leftModuleId": 1,
       "text": "patch instructions:\n\n1. Choose an audio driver and device in the AUDIO-8 module.\n\n2. Drag knobs up/down. Hold Ctrl (Cmd on Mac) while dragging to fine-tune. Right-click knobs to edit, or double-click to initialize.\n\n3. Drag ports to create and move 3ables. Stack multiple cables on outputs by holding Ctrl (Cmd on Mac) and dragging from an output.\n\n4. Right-click on an empty rack space to add new modules.",
       "pos": [
-        90,
+        91,
         0
       ]
     },
@@ -132,7 +131,7 @@
         "script": "// module3.js is a gate sequencer, which takes as its only input a signal. It compares the input \tsignal amplitude against 6 logical conditions, and sends a gate out of one of the 6 outputs. \n\n// Inputs: IN1\n// Outputs: OUT1, OUT2, OUT3, OUT4, OUT5, OUT6\n\n\nconfig.frameDivider = 1\nconfig.bufferSize = 16\n\nvar phase = 0\n\nfunction step(step){\n\tdisplay('output: ' + step)\n}\n\nfunction process(block) {\t\n\t// Set all samples in output buffer\n\tfor (var i = 0; i < block.bufferSize; i++) {\n\t\t// IN1: signal input value ranges 0-10, and is thus tested against the switch case below\n\t\tlet switcher = Math.floor(block.inputs[0][i])\n\t\tswitch (switcher){\n\t\t\t// output 0\n\t\t\tcase 0:\n\t\t\t\t\tstep(0)\n\t\t\t\t\tblock.outputs[0][i] = 20\n\t\t\t\t\tblock.outputs[1][i] = 10\n\t\t\t\t\tblock.outputs[2][i] = 0\n\t\t\t\t\tblock.outputs[3][i] = 1 \n\t\t\t\t\tblock.outputs[4][i] = 10\n\t\t\t\t\tblock.outputs[5][i] = 0\n\t\t\tbreak;\n\t\t\t// output 1\n\t\t\tcase 1:\n\t\t\tcase 2:\n\t\t\t\t\tstep(1)\n\t\t\t\t\tblock.outputs[0][i] = 0\n\t\t\t\t\tblock.outputs[1][i] = 10\n\t\t\t\t\tblock.outputs[2][i] = 0\n\t\t\t\t\tblock.outputs[3][i] = 0\n\t\t\t\t\tblock.outputs[4][i] = 0\n\t\t\t\t\tblock.outputs[5][i] = 0\n\t\t\tbreak;\n\n\t\t\t// output 2\n\t\t\tcase 3:\n\t\t\t\tstep(3)\n\t\t\t\tblock.outputs[0][i] = 10\n\t\t\t\tblock.outputs[5][i] = 10\n\t\t\tcase 4:\n\t\t\t\t\tstep(2)\n\t\t\t\t\tblock.outputs[0][i] = 0\n\t\t\t\t\tblock.outputs[1][i] = 0\n\t\t\t\t\tblock.outputs[2][i] = 10\n\t\t\t\t\tblock.outputs[3][i] = 0\n\t\t\t\t\tblock.outputs[4][i] = 0\n\t\t\t\t\tblock.outputs[5][i] = 0\n\t\t\tbreak;\n\t\t\t// output 3\t\t\t\n\t\t\tcase 5:\n\t\t\tcase 6:\n\t\t\t\tstep(3)\n\t\t\t\tblock.outputs[0][i] = 0\n\t\t\t\tblock.outputs[1][i] = 0\n\t\t\t\tblock.outputs[2][i] = 0\n\t\t\t\tblock.outputs[3][i] = 10\n\t\t\t\tblock.outputs[4][i] = 0\n\t\t\t\tblock.outputs[5][i] = 0\n\t\t\tbreak;\n\t\t\t// output 4\n\t\t\tcase 7:\n\t\t\tcase 8:\n\t\t\t\t\tstep(4)\n\t\t\t\t\tblock.outputs[0][i] = 0\n\t\t\t\t\tblock.outputs[1][i] = 10\n\t\t\t\t\tblock.outputs[2][i] = 0\n\t\t\t\t\tblock.outputs[3][i] = 0\n\t\t\t\t\tblock.outputs[4][i] = 10\n\t\t\t\t\tblock.outputs[5][i] = 0\n\t\t\tbreak;\n\t\t\t// output 5\n\t\t\tcase 9:\n\t\t\t\t\tstep(5)\n\t\t\t\t\tblock.outputs[0][i] = 0\n\t\t\t\t\tblock.outputs[1][i] = rand(11); \n\t\t\t\t\tblock.outputs[2][i] = 10\n\t\t\t\t\tblock.outputs[3][i] = 0\n\t\t\t\t\tblock.outputs[4][i] = 0\n\t\t\t\t\tblock.outputs[5][i] = rand(10)\n\t\t\tbreak;\t\t\t\t\n\t\t}\n\t} \n\t\n\n}\n\nfunction rand(n){\n\treturn Math.floor(Math.random(n)); \n}\n"
       },
       "pos": [
-        16,
+        17,
         0
       ]
     },
@@ -144,7 +143,7 @@
       "params": [],
       "text": "recording! this little module simplifies things so we don't have to use jack+daw\n\nremember to save the recording to the git repo, but don't let it be larger than 20MB~",
       "pos": [
-        82,
+        83,
         1
       ]
     },
@@ -156,15 +155,15 @@
       "params": [
         {
           "id": 0,
-          "value": 1.0
-        },
-        {
-          "id": 1,
           "value": 0.0
         },
         {
+          "id": 1,
+          "value": 1.0
+        },
+        {
           "id": 2,
-          "value": -1.39400184
+          "value": -7.00101089
         },
         {
           "id": 3,
@@ -176,7 +175,7 @@
         },
         {
           "id": 5,
-          "value": 0.352509916
+          "value": 0.525969744
         },
         {
           "id": 6,
@@ -185,7 +184,7 @@
       ],
       "rightModuleId": 39,
       "pos": [
-        0,
+        1,
         0
       ]
     },
@@ -219,7 +218,7 @@
       "leftModuleId": 2,
       "rightModuleId": 1,
       "pos": [
-        70,
+        71,
         0
       ]
     },
@@ -239,15 +238,15 @@
         },
         {
           "id": 2,
-          "value": 23.459938
+          "value": 18.2399693
         },
         {
           "id": 3,
-          "value": 0.689001739
+          "value": 0.652000189
         },
         {
           "id": 4,
-          "value": 0.374000132
+          "value": 0.459500283
         },
         {
           "id": 5,
@@ -263,11 +262,11 @@
         },
         {
           "id": 8,
-          "value": 0.0
+          "value": 0.0120000206
         },
         {
           "id": 9,
-          "value": 0.155999973
+          "value": -0.0329998806
         },
         {
           "id": 10,
@@ -285,7 +284,7 @@
         "easterEgg": false
       },
       "pos": [
-        30,
+        31,
         1
       ]
     },
@@ -305,11 +304,11 @@
         },
         {
           "id": 2,
-          "value": 38.0999565
+          "value": 59.9099998
         },
         {
           "id": 3,
-          "value": 0.80600214
+          "value": 0.680499971
         },
         {
           "id": 4,
@@ -347,11 +346,11 @@
       "leftModuleId": 36,
       "data": {
         "polyphony": 2,
-        "model": 1,
+        "model": 0,
         "easterEgg": false
       },
       "pos": [
-        44,
+        45,
         1
       ]
     },
@@ -363,15 +362,15 @@
       "params": [
         {
           "id": 0,
-          "value": 1.0
+          "value": 0.0
         },
         {
           "id": 1,
-          "value": 1.0
+          "value": 0.0
         },
         {
           "id": 2,
-          "value": -1.52899957
+          "value": -8.0
         },
         {
           "id": 3,
@@ -385,502 +384,8 @@
       "leftModuleId": 28,
       "rightModuleId": 17,
       "pos": [
-        10,
+        11,
         0
-      ]
-    },
-    {
-      "id": 41,
-      "plugin": "DrumKit",
-      "version": "1.1.2",
-      "model": "BassDrum9",
-      "params": [
-        {
-          "id": 0,
-          "value": 0.0
-        },
-        {
-          "id": 1,
-          "value": 0.0
-        },
-        {
-          "id": 2,
-          "value": 0.0
-        },
-        {
-          "id": 3,
-          "value": 0.0
-        },
-        {
-          "id": 4,
-          "value": 0.0
-        },
-        {
-          "id": 5,
-          "value": 0.0
-        },
-        {
-          "id": 6,
-          "value": 0.0
-        },
-        {
-          "id": 7,
-          "value": 0.0
-        },
-        {
-          "id": 8,
-          "value": 0.0
-        },
-        {
-          "id": 9,
-          "value": 0.0
-        },
-        {
-          "id": 10,
-          "value": 0.0
-        },
-        {
-          "id": 11,
-          "value": 0.0
-        },
-        {
-          "id": 12,
-          "value": 0.0
-        },
-        {
-          "id": 13,
-          "value": 0.0
-        },
-        {
-          "id": 14,
-          "value": 0.0
-        },
-        {
-          "id": 15,
-          "value": 0.0
-        },
-        {
-          "id": 16,
-          "value": 0.200000003
-        },
-        {
-          "id": 17,
-          "value": 0.200000003
-        },
-        {
-          "id": 18,
-          "value": 0.0
-        },
-        {
-          "id": 19,
-          "value": 0.0
-        },
-        {
-          "id": 20,
-          "value": 0.0
-        },
-        {
-          "id": 21,
-          "value": 0.0
-        },
-        {
-          "id": 22,
-          "value": 0.0
-        },
-        {
-          "id": 23,
-          "value": 0.0
-        },
-        {
-          "id": 24,
-          "value": 0.0
-        },
-        {
-          "id": 25,
-          "value": 0.0
-        },
-        {
-          "id": 26,
-          "value": 0.0
-        },
-        {
-          "id": 27,
-          "value": 0.0
-        },
-        {
-          "id": 28,
-          "value": 0.0
-        },
-        {
-          "id": 29,
-          "value": 0.0
-        },
-        {
-          "id": 30,
-          "value": 0.0
-        },
-        {
-          "id": 31,
-          "value": 0.0
-        }
-      ],
-      "rightModuleId": 43,
-      "pos": [
-        7,
-        1
-      ]
-    },
-    {
-      "id": 43,
-      "plugin": "DrumKit",
-      "version": "1.1.2",
-      "model": "OpenHiHat",
-      "params": [
-        {
-          "id": 0,
-          "value": 3.0
-        },
-        {
-          "id": 1,
-          "value": 8.0
-        },
-        {
-          "id": 2,
-          "value": 0.0
-        },
-        {
-          "id": 3,
-          "value": 0.0
-        },
-        {
-          "id": 4,
-          "value": 0.0
-        },
-        {
-          "id": 5,
-          "value": 0.0
-        },
-        {
-          "id": 6,
-          "value": 0.0
-        },
-        {
-          "id": 7,
-          "value": 0.0
-        },
-        {
-          "id": 8,
-          "value": 0.0
-        },
-        {
-          "id": 9,
-          "value": 0.0
-        },
-        {
-          "id": 10,
-          "value": 0.0
-        },
-        {
-          "id": 11,
-          "value": 0.0
-        },
-        {
-          "id": 12,
-          "value": 0.0
-        },
-        {
-          "id": 13,
-          "value": 0.0
-        },
-        {
-          "id": 14,
-          "value": 0.0
-        },
-        {
-          "id": 15,
-          "value": 0.0
-        },
-        {
-          "id": 16,
-          "value": 0.200000003
-        },
-        {
-          "id": 17,
-          "value": 1.06639946
-        },
-        {
-          "id": 18,
-          "value": 0.0
-        },
-        {
-          "id": 19,
-          "value": 0.0
-        },
-        {
-          "id": 20,
-          "value": 0.0
-        },
-        {
-          "id": 21,
-          "value": 0.0
-        },
-        {
-          "id": 22,
-          "value": 0.0
-        },
-        {
-          "id": 23,
-          "value": 0.0
-        },
-        {
-          "id": 24,
-          "value": 0.0
-        },
-        {
-          "id": 25,
-          "value": 0.0
-        },
-        {
-          "id": 26,
-          "value": 0.0
-        },
-        {
-          "id": 27,
-          "value": 0.0
-        },
-        {
-          "id": 28,
-          "value": 0.0
-        },
-        {
-          "id": 29,
-          "value": 0.0
-        },
-        {
-          "id": 30,
-          "value": 0.0
-        },
-        {
-          "id": 31,
-          "value": 0.0
-        },
-        {
-          "id": 32,
-          "value": 0.0565497056
-        },
-        {
-          "id": 33,
-          "value": 0.334650248
-        },
-        {
-          "id": 34,
-          "value": 0.0
-        },
-        {
-          "id": 35,
-          "value": 0.0
-        },
-        {
-          "id": 36,
-          "value": 0.0
-        },
-        {
-          "id": 37,
-          "value": 0.0
-        },
-        {
-          "id": 38,
-          "value": 0.0
-        },
-        {
-          "id": 39,
-          "value": 0.0
-        },
-        {
-          "id": 40,
-          "value": 0.0
-        },
-        {
-          "id": 41,
-          "value": 0.0
-        },
-        {
-          "id": 42,
-          "value": 0.0
-        },
-        {
-          "id": 43,
-          "value": 0.0
-        },
-        {
-          "id": 44,
-          "value": 0.0
-        },
-        {
-          "id": 45,
-          "value": 0.0
-        },
-        {
-          "id": 46,
-          "value": 0.0
-        },
-        {
-          "id": 47,
-          "value": 0.0
-        },
-        {
-          "id": 48,
-          "value": 0.0
-        },
-        {
-          "id": 49,
-          "value": 0.0
-        }
-      ],
-      "leftModuleId": 41,
-      "pos": [
-        13,
-        1
-      ]
-    },
-    {
-      "id": 45,
-      "plugin": "DrumKit",
-      "version": "1.1.2",
-      "model": "CR78",
-      "params": [
-        {
-          "id": 0,
-          "value": 0.0
-        },
-        {
-          "id": 1,
-          "value": 1.0
-        },
-        {
-          "id": 2,
-          "value": 0.0
-        },
-        {
-          "id": 3,
-          "value": 0.0
-        },
-        {
-          "id": 4,
-          "value": 0.0
-        },
-        {
-          "id": 5,
-          "value": 0.0
-        },
-        {
-          "id": 6,
-          "value": 0.0
-        },
-        {
-          "id": 7,
-          "value": 0.0
-        },
-        {
-          "id": 8,
-          "value": 0.0
-        },
-        {
-          "id": 9,
-          "value": 0.0
-        },
-        {
-          "id": 10,
-          "value": 0.0
-        },
-        {
-          "id": 11,
-          "value": 0.0
-        },
-        {
-          "id": 12,
-          "value": 0.0
-        },
-        {
-          "id": 13,
-          "value": 0.0
-        },
-        {
-          "id": 14,
-          "value": 0.0
-        },
-        {
-          "id": 15,
-          "value": 0.0
-        },
-        {
-          "id": 16,
-          "value": 0.200000003
-        },
-        {
-          "id": 17,
-          "value": 0.200000003
-        },
-        {
-          "id": 18,
-          "value": 0.0
-        },
-        {
-          "id": 19,
-          "value": 0.0
-        },
-        {
-          "id": 20,
-          "value": 0.0
-        },
-        {
-          "id": 21,
-          "value": 0.0
-        },
-        {
-          "id": 22,
-          "value": 0.0
-        },
-        {
-          "id": 23,
-          "value": 0.0
-        },
-        {
-          "id": 24,
-          "value": 0.0
-        },
-        {
-          "id": 25,
-          "value": 0.0
-        },
-        {
-          "id": 26,
-          "value": 0.0
-        },
-        {
-          "id": 27,
-          "value": 0.0
-        },
-        {
-          "id": 28,
-          "value": 0.0
-        },
-        {
-          "id": 29,
-          "value": 0.0
-        },
-        {
-          "id": 30,
-          "value": 0.0
-        },
-        {
-          "id": 31,
-          "value": 0.0
-        }
-      ],
-      "pos": [
-        63,
-        1
       ]
     },
     {
@@ -891,7 +396,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.273000777
+          "value": 0.987000585
         },
         {
           "id": 1,
@@ -901,14 +406,14 @@
       "rightModuleId": 2,
       "data": {
         "format": "wav",
-        "path": "/Users/audiobeing/gitshow3/recording3.wav",
-        "incrementPath": true,
+        "path": "D:\\Documents\\GitHub\\gitshow10/recording.wav",
+        "incrementPath": false,
         "sampleRate": 44100,
         "depth": 16,
         "bitRate": 320000
       },
       "pos": [
-        55,
+        56,
         0
       ]
     },
@@ -932,7 +437,7 @@
         },
         {
           "id": 3,
-          "value": 0.835000217
+          "value": -0.244999766
         },
         {
           "id": 4,
@@ -948,19 +453,19 @@
         },
         {
           "id": 7,
-          "value": 0.10000027
+          "value": 0.910000265
         },
         {
           "id": 8,
-          "value": 0.708000302
+          "value": 0.585000217
         },
         {
           "id": 9,
-          "value": 0.00300000003
+          "value": 0.0
         },
         {
           "id": 10,
-          "value": 1.0
+          "value": 0.0
         },
         {
           "id": 11,
@@ -974,6 +479,46 @@
       "pos": [
         34,
         0
+      ]
+    },
+    {
+      "id": 46,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 5.39999723
+        },
+        {
+          "id": 3,
+          "value": 0.417000115
+        },
+        {
+          "id": 4,
+          "value": 0.379500061
+        },
+        {
+          "id": 5,
+          "value": 0.523029923
+        },
+        {
+          "id": 6,
+          "value": 0.426000029
+        }
+      ],
+      "pos": [
+        0,
+        1
       ]
     }
   ],
@@ -1019,36 +564,12 @@
       "color": "#0c8e15"
     },
     {
-      "id": 403,
-      "outputModuleId": 43,
-      "outputId": 1,
-      "inputModuleId": 2,
-      "inputId": 4,
-      "color": "#c91847"
-    },
-    {
       "id": 412,
       "outputModuleId": 35,
       "outputId": 0,
       "inputModuleId": 44,
       "inputId": 3,
       "color": "#c9b70e"
-    },
-    {
-      "id": 436,
-      "outputModuleId": 2,
-      "outputId": 1,
-      "inputModuleId": 45,
-      "inputId": 0,
-      "color": "#c9b70e"
-    },
-    {
-      "id": 433,
-      "outputModuleId": 45,
-      "outputId": 1,
-      "inputModuleId": 35,
-      "inputId": 4,
-      "color": "#0986ad"
     },
     {
       "id": 380,
@@ -1107,108 +628,12 @@
       "color": "#0986ad"
     },
     {
-      "id": 430,
-      "outputModuleId": 43,
-      "outputId": 1,
-      "inputModuleId": 36,
-      "inputId": 6,
-      "color": "#0c8e15"
-    },
-    {
-      "id": 374,
-      "outputModuleId": 17,
-      "outputId": 0,
-      "inputModuleId": 36,
-      "inputId": 5,
-      "color": "#0c8e15"
-    },
-    {
       "id": 375,
       "outputModuleId": 17,
       "outputId": 1,
       "inputModuleId": 37,
       "inputId": 5,
       "color": "#c91847"
-    },
-    {
-      "id": 432,
-      "outputModuleId": 17,
-      "outputId": 2,
-      "inputModuleId": 45,
-      "inputId": 17,
-      "color": "#c91847"
-    },
-    {
-      "id": 406,
-      "outputModuleId": 17,
-      "outputId": 3,
-      "inputModuleId": 43,
-      "inputId": 17,
-      "color": "#c91847"
-    },
-    {
-      "id": 423,
-      "outputModuleId": 28,
-      "outputId": 3,
-      "inputModuleId": 43,
-      "inputId": 32,
-      "color": "#0986ad"
-    },
-    {
-      "id": 398,
-      "outputModuleId": 41,
-      "outputId": 0,
-      "inputModuleId": 2,
-      "inputId": 3,
-      "color": "#0986ad"
-    },
-    {
-      "id": 415,
-      "outputModuleId": 28,
-      "outputId": 0,
-      "inputModuleId": 41,
-      "inputId": 16,
-      "color": "#c91847"
-    },
-    {
-      "id": 422,
-      "outputModuleId": 28,
-      "outputId": 0,
-      "inputModuleId": 38,
-      "inputId": 0,
-      "color": "#c91847"
-    },
-    {
-      "id": 437,
-      "outputModuleId": 43,
-      "outputId": 1,
-      "inputModuleId": 38,
-      "inputId": 1,
-      "color": "#c91847"
-    },
-    {
-      "id": 438,
-      "outputModuleId": 38,
-      "outputId": 10,
-      "inputModuleId": 36,
-      "inputId": 2,
-      "color": "#0986ad"
-    },
-    {
-      "id": 439,
-      "outputModuleId": 38,
-      "outputId": 9,
-      "inputModuleId": 43,
-      "inputId": 65,
-      "color": "#c9b70e"
-    },
-    {
-      "id": 435,
-      "outputModuleId": 38,
-      "outputId": 3,
-      "inputModuleId": 43,
-      "inputId": 64,
-      "color": "#0c8e15"
     },
     {
       "id": 426,
@@ -1235,20 +660,52 @@
       "color": "#0986ad"
     },
     {
-      "id": 424,
-      "outputModuleId": 43,
-      "outputId": 0,
-      "inputModuleId": 38,
-      "inputId": 8,
-      "color": "#c9b70e"
-    },
-    {
       "id": 429,
       "outputModuleId": 28,
       "outputId": 2,
       "inputModuleId": 39,
       "inputId": 2,
       "color": "#c9b70e"
+    },
+    {
+      "id": 441,
+      "outputModuleId": 39,
+      "outputId": 0,
+      "inputModuleId": 46,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 445,
+      "outputModuleId": 46,
+      "outputId": 3,
+      "inputModuleId": 36,
+      "inputId": 5,
+      "color": "#c91847"
+    },
+    {
+      "id": 438,
+      "outputModuleId": 38,
+      "outputId": 10,
+      "inputModuleId": 36,
+      "inputId": 2,
+      "color": "#0986ad"
+    },
+    {
+      "id": 444,
+      "outputModuleId": 46,
+      "outputId": 1,
+      "inputModuleId": 36,
+      "inputId": 3,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 442,
+      "outputModuleId": 46,
+      "outputId": 0,
+      "inputModuleId": 38,
+      "inputId": 10,
+      "color": "#0986ad"
     }
   ]
 }
