@@ -1,12 +1,8 @@
 
 ## Score:
 
--find your flow
+<img src= "https://drive.google.com/uc?export=view&id=1RayQHKJnJWusBwYbMp1ecoCpIEXjkoou">
 
--there is an additinal flow to find
+-Connect the blue wire to the corresponding location to start.
 
--flip the switches and triggers to change the flow
-
--change streams
-
-
+-Enjoy sound

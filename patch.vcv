@@ -1237,14 +1237,6 @@
       "color": "#c9b70e"
     },
     {
-      "id": 567,
-      "outputModuleId": 70,
-      "outputId": 0,
-      "inputModuleId": 60,
-      "inputId": 1,
-      "color": "#0c8e15"
-    },
-    {
       "id": 503,
       "outputModuleId": 62,
       "outputId": 1,
@@ -1517,12 +1509,12 @@
       "color": "#c91847"
     },
     {
-      "id": 770,
-      "outputModuleId": 52,
-      "outputId": 2,
-      "inputModuleId": 61,
-      "inputId": 6,
-      "color": "#c9b70e"
+      "id": 567,
+      "outputModuleId": 70,
+      "outputId": 0,
+      "inputModuleId": 60,
+      "inputId": 1,
+      "color": "#0c8e15"
     }
   ]
 }

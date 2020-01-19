@@ -1,10 +1,10 @@
 >## Score:
 
->-find your flow
+><img src= "https://drive.google.com/uc?export=view&id=1RayQHKJnJWusBwYbMp1ecoCpIEXjkoou">
 
->-flip the switches and triggers to change the flow
+>-Connect the blue wire to the corresponding location to start.
 
->-change streams
+>-Enjoy sound
 
 The most immediately noticeable  feature of the piece is the stereo mixing, with each side featuring its own alternating buzz/bass sound. Theses sound change in speed over time, and are occasionally punctuated by seemingly arrhythmic chirps. The chirps develop a more coherent rhythm at 0:52. IT devolves into sudden buzzing at 1:09. The plucking continues, but loses its rhythm.
 
