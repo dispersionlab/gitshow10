@@ -20,3 +20,9 @@ Light drums at the start, with a skittering effect. Deep booming drums come in f
 Moving forward previously I've taken what the previous patch built up, or took cues from the old score to create a new one. In this case with a score so vague I'm going to follow its instructions with what I create and "Enjoy sound", in whatever way seems right. Sampling seems like an interesting way of doing that, possibly with the granular synthesis modules that I've been wanting to learn how to use, or the random sampler.
 
 I'm wanting to keep this patch simple as well, because the previous ones that I have worked on have all had performance issues on my laptop during performance, despite not showing signs of that previously. I'm going to try not to sacrifice the amount of sound I can generate because of this, I'll try to use some tricks I've learned to push the sound.
+
+# Performance
+
+The piece is interesting to perform. Because of the lack of instructions, its hard to precisely play the piece that was recorded. It takes a while to learn what each of the controls is doing to the sound, and how to play them together. Another thing of note is that there are a few components in the patch that are not connected to anything. The image shows the segment generator connected to Rampage, however in the patch, its not connected at all.
+
+I may keep some of this in my rendition. We will see where the inspiration takes me.
