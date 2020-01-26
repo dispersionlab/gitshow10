@@ -25,4 +25,6 @@ I'm wanting to keep this patch simple as well, because the previous ones that I 
 
 The piece is interesting to perform. Because of the lack of instructions, its hard to precisely play the piece that was recorded. It takes a while to learn what each of the controls is doing to the sound, and how to play them together. Another thing of note is that there are a few components in the patch that are not connected to anything. The image shows the segment generator connected to Rampage, however in the patch, its not connected at all.
 
+It's a very experimental instrument, at least I found it to be so. With controls falling entirely on the dials and connections, it pushes you to create weird, and abstract sounds, but is mostly simple enough that they sound legible still.
+
 I may keep some of this in my rendition. We will see where the inspiration takes me.
