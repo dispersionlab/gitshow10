@@ -26,3 +26,22 @@ The track begins with a slightly low bassline that quickly transforms with addit
 ![Imgur](https://i.imgur.com/KJp0kVZ.png)
 
 As shown in the image above, the recording was achieved with a 17 module setup that looks pretty clean and organized.  Patching cable amount seems large yet really easy to follow.  Notable modules for me at first glance was the Quantizer. Seeing how that works in this rack makes me want to work with this module in my first edit.
+
+### Score
+
+Having been playing with the idea of using the dot language for notation in this exercise, so I tried to imagine what the score would look like for this recording (sketch below).
+
+
+![](https://i.imgur.com/2icic2r.png)
+
+
+#### Analysis
+
+The score sample image above suggests the following 4 events:
+
+00:00 - Pattern begins with BPM set to 139
+00:11 - An echo effect begins to emerge
+00:13 - Slow rising pitch w/reverb
+00:20 - Glitchy high pitched digital sound w/reverb
+
+This glitchy sound continues to repeats at a medium pace, then cuts off that particular pattern at around 00:50.
