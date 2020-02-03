@@ -12,7 +12,7 @@
       "data": {
         "audio": {
           "driver": 5,
-          "deviceName": "Burr-Brown from TI              : USB Audio CODEC ",
+          "deviceName": "Apple Inc.: Built-in Output",
           "offset": 0,
           "maxChannels": 8,
           "sampleRate": 44100,
@@ -140,7 +140,7 @@
     {
       "id": 106,
       "plugin": "squinkylabs-plug1",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "model": "squinkylabs-mix8",
       "params": [
         {
@@ -217,11 +217,11 @@
         },
         {
           "id": 18,
-          "value": 0.0
+          "value": 1.0
         },
         {
           "id": 19,
-          "value": 0.0
+          "value": 1.0
         },
         {
           "id": 20,
@@ -331,7 +331,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.890500009
+          "value": 1.0
         },
         {
           "id": 1,
@@ -372,12 +372,12 @@
     {
       "id": 113,
       "plugin": "DrumKit",
-      "version": "1.1.3",
+      "version": "1.1.4",
       "model": "Gnome",
       "params": [
         {
           "id": 0,
-          "value": 139.73494
+          "value": 101.739922
         },
         {
           "id": 1,
@@ -501,7 +501,7 @@
             "loop": false
           },
           {
-            "type": 0,
+            "type": 1,
             "loop": true
           },
           {
@@ -723,7 +723,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.846000075
+          "value": 0.729000211
         },
         {
           "id": 1,
@@ -828,7 +828,7 @@
         },
         {
           "id": 3,
-          "value": 0.0
+          "value": 0.585000217
         },
         {
           "id": 4,
@@ -954,14 +954,6 @@
       "inputModuleId": 114,
       "inputId": 1,
       "color": "#0986ad"
-    },
-    {
-      "id": 773,
-      "outputModuleId": 52,
-      "outputId": 2,
-      "inputModuleId": 115,
-      "inputId": 0,
-      "color": "#c91847"
     },
     {
       "id": 799,
@@ -1178,6 +1170,54 @@
       "inputModuleId": 125,
       "inputId": 1,
       "color": "#0c8e15"
+    },
+    {
+      "id": 773,
+      "outputModuleId": 52,
+      "outputId": 2,
+      "inputModuleId": 125,
+      "inputId": 2,
+      "color": "#c91847"
+    },
+    {
+      "id": 875,
+      "outputModuleId": 125,
+      "outputId": 2,
+      "inputModuleId": 115,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 876,
+      "outputModuleId": 70,
+      "outputId": 1,
+      "inputModuleId": 113,
+      "inputId": 2,
+      "color": "#0986ad"
+    },
+    {
+      "id": 878,
+      "outputModuleId": 107,
+      "outputId": 3,
+      "inputModuleId": 122,
+      "inputId": 1,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 877,
+      "outputModuleId": 122,
+      "outputId": 0,
+      "inputModuleId": 125,
+      "inputId": 3,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 879,
+      "outputModuleId": 125,
+      "outputId": 3,
+      "inputModuleId": 106,
+      "inputId": 4,
+      "color": "#c91847"
     }
   ]
 }

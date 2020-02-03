@@ -1,17 +1,14 @@
 # Score:
 
-1. Unmute the first two channels to start.
+#### Performance instructions
+Instrument
 
-2. Learn the pace, find the duration that suits you.
+![Imgur](https://i.imgur.com/0eFzkGQ.png)
 
-3. Unmute the next two channels.
+Fine Tuning
 
-4. Adjust the timing, learn the connections.
+![](https://i.imgur.com/qQnlRXq.png)
 
-5. Make a mess.
+When it loads, you'll immediately here the "Birdy Telegraph" system.  Change the 4th dial on the `8VERT` to 9 o'clock to alter the sound.  Unmute and mute channels 1 through 5 on the Mixer 8.
 
-6. Cut down to the start.
-
-Lean back and enjoy when you've found your sequence, or your chaos.
-
-Be gentle though, unwelcome appearances can occur.
+Want more?  Try also stepping up and down, the `SEQ-3` modules `STEPS` dial.

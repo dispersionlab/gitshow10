@@ -45,3 +45,19 @@ The score sample image above suggests the following 4 events:
 00:20 - Glitchy high pitched digital sound w/reverb
 
 This glitchy sound continues to repeats at a medium pace, then cuts off that particular pattern at around 00:50.
+
+---
+
+## Performance
+
+Here is the state of the amended modules seleted:
+
+![](https://i.imgur.com/0eFzkGQ.png)
+
+The changes can roughly be defined as follows:
+
+1. `BPM` changed to `101` in `GNOME` module.
+2. Patch cable added between `GNOME WIDTH` and `LFO-1 TRI` waveform.
+3. Created 3rd channel in `8VERT` connecting a patch cable from `VCO-1 SAW` waveform to its input and a patch cable from `8VERT` output of 3rd channel to `Quantizer (QNT) IN`.
+4. Create 4th channel in `8VERT` connecting a patch cable from `VCF LPF` to its input and a patch cable from `8VERT` output of 4th channel to `Mixer8 IN 5`.  Dial on `8VERT` 4th channel turned to 9-o'clock.
+5. Muted channels 1 through 4 of `Mixer8`.
