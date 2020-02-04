@@ -16,3 +16,7 @@ Want more?  Try also stepping up and down, the `SEQ-3` module `STEPS` dial.
 #### Deep Bass Telegraph
 
 ![](https://i.imgur.com/oF1kA3u.png)
+
+Score:
+
+![](https://i.imgur.com/ssSeVvO.png)

@@ -61,3 +61,9 @@ The changes can roughly be defined as follows:
 3. Created 3rd channel in `8VERT` connecting a patch cable from `VCO-1 SAW` waveform to its input and a patch cable from `8VERT` output of 3rd channel to `Quantizer (QNT) IN`.
 4. Create 4th channel in `8VERT` connecting a patch cable from `VCF LPF` to its input and a patch cable from `8VERT` output of 4th channel to `Mixer8 IN 5`.  Dial on `8VERT` 4th channel turned to 9-o'clock.
 5. Muted channels 1 through 4 of `Mixer8`.
+
+### Deep Bass Telegraph
+
+![](https://i.imgur.com/oF1kA3u.png)
+
+Deep Bass Telegraph is a newer version of Birdy Telegraph, using the same modules and a few patch cable reroutes to give a deep bass sound.
